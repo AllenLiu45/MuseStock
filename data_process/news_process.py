@@ -296,7 +296,7 @@ if __name__ == "__main__":
         # get news embedding
         get_news_embedding(csv_news_path="../data/ACL18/news_original/csv/",
                            embedding_path="../data/ACL18/news_embedding/",
-                           local_model_path="your model path",
+                           local_model_path="your baseline_model path",
                            trading_date_list="../data/ACL18/trading_date_list.csv",
                            encoder_type="gru",
                            use_attention=True)
@@ -310,7 +310,7 @@ if __name__ == "__main__":
         # get news embedding
         get_news_embedding(csv_news_path="../data/CMIN-US/news_original/",
                            embedding_path="../data/CMIN-US/news_embedding/",
-                           local_model_path="your model path",
+                           local_model_path="your baseline_model path",
                            trading_date_list="../data/CMIN-US/trading_date_list.csv",
                            encoder_type="gru",
                            use_attention=True,
@@ -323,7 +323,7 @@ if __name__ == "__main__":
 
         get_news_embedding(csv_news_path="../data/CMIN-CN/news_original/",
                        embedding_path="../data/CMIN-CN/news_embedding/",
-                       local_model_path="your model path",
+                       local_model_path="your baseline_model path",
                        trading_date_list="../data/CMIN-CN/trading_date_list.csv",
                        encoder_type="gru",
                        use_attention=True,

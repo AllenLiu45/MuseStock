@@ -39,7 +39,7 @@ parser.add_argument('--infer', type=float, default='1',
 parser.add_argument('--relation', type=str, default='None',
                     help='all, competitor, customer, industry, stratigic, supply')
 parser.add_argument('--save', type=bool, default=True,
-                    help='save model')
+                    help='save baseline_model')
 parser.add_argument('--dataset', type=str, default='CMIN-US',
                     help='ACL18, CMIN-US, CMIN-CN')
 

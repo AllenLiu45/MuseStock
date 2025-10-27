@@ -1,4 +1,4 @@
-# 	Dynamic Graph Generation with Sentiment-Attentive Multimodal Fusion: A GNN Approach for Stock Prediction
+# 	MuseStock: Dynamic Graph-based Multimodal Fusion for Stock Prediction
 Code detail for this paper.
 
 ## Environment
@@ -11,7 +11,7 @@ ACL18: https://github.com/yumoxu/stocknet-dataset
 CMIN: https://github.com/BigRoddy/CMIN-Dataset
 
 ## Data process
-After down the raw dataset. You need to process the data. Then you can cd into the data_process  folder and follow the following steps:
+After download the raw dataset. You need to process raw data to eliminate the missing data and the outliers, then cd into the './data_process' folder and follow the following steps:
 ```sh
 $ python price_process.py
 $ python news_process.py
@@ -20,7 +20,8 @@ $ python sentiment_proces.py
 
 After all the process, you will get the pkl to store the data.
 And we provide a series of tools in the util.py. You can use them to help you understand the process.
-After dataprocess  you can run the main.py to train the model. You can adjust your configuration in my_parser.py.
+We also provide a series baseline models in the path ./baseline_model. Some public and difficult to integrated models can be downloaded from public github link.
+After dataprocess you can run the main.py to train the model. You can adjust your configuration in my_parser.py.
 
 ## Run
 ```sh

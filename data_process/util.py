@@ -136,7 +136,7 @@ def check_date(price_path, news_path):
             print(f"{ticker} is not in price folder")
 
 def test_sentiment():
-    local_model_path = "your model path"
+    local_model_path = "your baseline_model path"
     device = torch.device("cuda:1")
 
     bert_model = AutoModelForSequenceClassification.from_pretrained(local_model_path, num_labels=3).to(device)

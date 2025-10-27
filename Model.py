@@ -3,9 +3,9 @@ import torch
 import torch.nn.functional as F
 import torch.nn as nn
 
-class AD_GAT(nn.Module):
+class MuseStock(nn.Module):
     def __init__(self, num_stock, d_market, d_news, d_hidden, hidn_rnn, heads, hidn_att, dropout=0, alpha=0.2, t_mix=1, relation_static=0, seq_len=5):
-        super(AD_GAT, self).__init__()
+        super(MuseStock, self).__init__()
         self.t_mix = t_mix
         self.dropout = dropout
         self.seq_len = seq_len

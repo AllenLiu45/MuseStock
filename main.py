@@ -163,7 +163,7 @@ if __name__=="__main__":
     testa_f1_best = 0
 
 
-    model = AD_GAT(num_stock=num_stock, d_market = D_MARKET,d_news= D_NEWS,
+    model = MuseStock(num_stock=num_stock, d_market = D_MARKET,d_news= D_NEWS,
                     d_hidden = D_MARKET, hidn_rnn = hidn_rnn, heads = attention_heads,
                     hidn_att= hidn_att, dropout = dropout,t_mix = t_mix, relation_static = static)
 

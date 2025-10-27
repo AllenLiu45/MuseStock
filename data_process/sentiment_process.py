@@ -61,7 +61,7 @@ if __name__ == '__main__':
         sentiment_for_relation(csv_news_path="../data/CMIN-US/news_original/",
                                news_sentiment_path="../data/CMIN-US/sentiment_for_relation/",
                                trading_date_list="../data/CMIN-US/trading_date_list.csv",
-                               local_model_path='your model path',
+                               local_model_path='your baseline_model path',
                                )
 
     # dataset_name = "CMIN-CN"
@@ -69,7 +69,7 @@ if __name__ == '__main__':
         sentiment_for_relation(csv_news_path="../data/CMIN-CN/news_original/",
                                news_sentiment_path="../data/CMIN-CN/sentiment_for_relation/",
                                trading_date_list="../data/CMIN-CN/trading_date_list.csv",
-                               local_model_path='your  model path')
+                               local_model_path='your  baseline_model path')
 
 
 

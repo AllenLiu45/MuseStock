@@ -78,7 +78,7 @@ class Graph_Tensor(nn.Module):
 
         x_market_tensor = market_transformed.unsqueeze(-1)
 
-        # Perform tensor multiplication with the learnable graph tensor to model high-order interactions between news and market data across stocks.
+        # Perform tensor multiplication with the learnable graph tensor to baseline_model high-order interactions between news and market data across stocks.
         temp_tensor = x_news_tensor.matmul(self.tensorGraph).squeeze()
         temp_tensor = temp_tensor.matmul(x_market_tensor).squeeze()
 
